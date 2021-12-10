@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "bundle-ios":"node node_modules/react-native/local-cli/cli.js bundle --entry-file index.js  --platform ios --dev false --bundle-output ./ios/bundle/index.ios.jsbundle --assets-dest ./ios/bundle",
+    "bundle-android":"node node_modules/react-native/local-cli/cli.js bundle --entry-file index.js  --platform android --dev false --bundle-output ./android/app/src/bundle/index.andorid.jsbundle --assets-dest ./android/app/src/bundle"
   },
   "dependencies": {
     "react": "17.0.2",
